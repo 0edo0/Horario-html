@@ -1,42 +1,62 @@
-body{
+body {
     background-color: bisque;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-header{
+header {
     background-color: rgb(7, 54, 95);
     color: aliceblue;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-main{
-    background-color: rgb(7, 54, 95);
-    height: 4%;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-
-main{
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
-} 
-table{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 90%;
+div {
+    overflow-x: auto;
+    width: 95%;
     max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
     background-color: beige;
     text-align: center;
-    border: 1px solid #000000
-    
+    border-collapse: collapse;
 }
 
-thead th{
+th, td {
+    border: 1px solid rgb(70, 70, 70);
+    padding: 8px;
+    white-space: nowrap;
+}
+
+thead th {
     background-color: rgb(30, 101, 167);
     color: beige;
 }
 
-th{
-    background-color:blanchedalmond;
+tbody th {
+    background-color: blanchedalmond;
+    white-space: nowrap;
 }
-th:hover{
+
+th:hover {
     background-color: slateblue;
+    color: white;
+}
+
+td[colspan="1"] {
+   font-style: italic;
+   color: grey;
 }
